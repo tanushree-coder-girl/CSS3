@@ -1,0 +1,35 @@
+/*this is Element , id , class Selector*/
+/*Ccc checks order What comes at last if same is repeatable then last one is shown*/
+/* h1{
+    color: blue;
+}
+#heading{
+    color: orange;
+}
+.main-head{
+    color: violet;
+}
+#heading{
+    color: red;
+} */
+
+/*COLORS*/
+.colorNames{
+    background-color: aqua;  /*predefined color name*/
+    background-color: rgb(21, 247, 217);  /*rgb value color*/
+    background-color: rgba(21, 247, 217, 0.5);  /*rgba value color*/
+    background-color: #3cb371 ;   /*hex value color*/
+    background-color: hsl(148, 89%, 50%);  /*hsl value color*/
+    background-color: hsla(91, 88%, 50%, 0.473);  /*hsla value color*/
+}
+.bg{
+    /* background-color: blueviolet;
+    opacity: 0.5; */
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    background-image: url('images/1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}

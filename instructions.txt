@@ -1,1 +1,88 @@
 -------------CSS3 From Beginer To Advanced----------
+
+1. Introduction 
+    CSS stands for Cascading Style Sheets.
+    It is Used to style Any Web page.
+    File name must be saved with a extension named as style.css 
+
+2. Syntax
+    selector {
+        property : value;   //Declaration
+    }
+
+3. How To Add Css
+    There are three ways of inserting a style sheet.
+        1. External CSS
+            example => <link rel="stylesheet" href="style.css">
+
+        2. Internal CSS
+            example =>  <head>
+                            <style>
+                                h1{
+                                    color: red;
+                                }
+                            </style>
+                        </head>
+
+        3. Inline CSS
+            example => <h1 style="color:red">Welcome in Css Tutorial</h1>
+ 
+        Point to be noted => 1. Always Gives first priority to Inline Style
+                             2. Then Check order of internal and external what comes at last then last one is shown in output. 
+
+4. Css Simple and Basics selectors
+     Simple selectors
+        example =>  1. id denotes as #idname
+                    2. class denotes as .classname ,
+                    3. element like p, h1, div, span etc
+        note=> 1. Gives first priority to id Then class and at last element. and check order also.
+        The Advanced selectors is discussed in bottom at line 
+
+5. Css Comments
+    css comment is written inside    /* code goes here */
+    /* This is a single-line comment */
+    /*
+    This is
+    a multi-line
+    comment
+     */
+
+6. CSS Color
+    Colors Can Be specified Using 
+        1. predefined Color Names like red , green , blue etc
+            note=> There are 140 + Standard predefined colors.
+
+        2. RGB like rgb(red, green, blue);
+            note=> Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.
+                    for black use rgb (0,0,0); and for white use rgb (255,255,255);
+
+        3. RGBA like rgba(red, green, blue, alpha) 
+            note=> The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):
+                    example => rgba(255 , 255 , 0 , 0.5);
+
+        4. HEX like #rrggbb 
+            note=> hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue)
+                   for black use #000000 and for white use #ffffff
+                   Sometimes you will see a 3-digit hex code in the CSS source. whixh is same as #rgb #f0f as #ff00ff
+
+        5. HSL like hsl(hue, saturation, lightness)
+            note=> Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+                   Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.
+                   Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white
+                   for black use hsl(0, 0, 0); and for white use hsl(0, 0, 100%);
+
+        6. HSLA like hsla(hue, saturation, lightness, alpha)
+                The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):
+                example => hsla(0, 100%, 50%, 0.5)
+
+        Reference link is => https://htmlcolorcodes.com/color-names/
+        Reference Link => https://www.w3schools.com/css/css_colors.asp
+
+7. Css Background property
+    1. background-color:red;                                                            for Background Color
+    2. opacity:0.5;                    opacity property to add transparency to the background of an element
+    3. background-image: url("demo.jpg");                           for set background image of an element
+    4. background-repeat: repeat-x , repeat-y, no-repeat;  x for horizontal repeat y for vertical repeat only.
+    5. background-position: left top, left bottom, left center, right bottom, right top, right center, center center, center top, center bottom;
+    6. background-attachment: scroll|fixed|local|initial|inherit;
+    
