@@ -85,4 +85,782 @@
     4. background-repeat: repeat-x , repeat-y, no-repeat;  x for horizontal repeat y for vertical repeat only.
     5. background-position: left top, left bottom, left center, right bottom, right top, right center, center center, center top, center bottom;
     6. background-attachment: scroll|fixed|local|initial|inherit;
+    7. background-clip: border-box|padding-box|content-box|initial|inherit;
+    8. background-origin: padding-box|border-box|content-box|initial|inherit;
+    9. background-size: auto|length|cover|contain|initial|inherit;
+
+    Shortend 
+    background: background-color background-image background-repeat background-attachment background-position;
+    ex=>   background: lightblue url("img_tree.gif") no-repeat fixed center;
+
+    for more details => https://www.w3schools.com/css/css_background_shorthand.asp
+
+8. Css Borders And outline
+    1. border-style: solid|dotted|dashed|double|groove|ridge|inset|outset|none|hidden;
+    1. outline-style:solid|dotted same as borders;
+    2. border-width: 5px|thick|medium;
+    2. outline-width:2px;
+    3. border-color: black|rgba(0,0,0,0.5)|hsl(0%,0%,0%);
+    3. outline-color:red;
+            for indiviual sides different syle
+            border-style: top right bottom left:
+            border-style: solid dashed dotted double:
+            border-style: topbottom rightleft:
+            border-style: solid dashed:
+            also like   border-top-style: solid;    //same in color and width also
+                        border-left-style: dashed;   //same in color and width also
+                        border-bottom-style: dotted;   //same in color and width also
+                        border-right-style: double;   //same in color and width also
+    4. border-radius:10px;
+        border-radius: topleft|bottomright topright|bottomleft;
+        border-radius: 10px 20px ;
+        border-radius: topleft topright bottomright bottomleft;
+        border-radius: 100px 50px 0px 10px;
+    5. outline-offset:15px; //add space b/w an outline and edge or border of elements.
     
+    Shortend
+    border: border-width border-color border-style;
+    outline:2px solid red;
+    border: 5px solid red;
+    border-bottom | border-top | border-left | border-right
+
+9. Margin And Padding 
+    Margins are used to create space around elements, outside of any defined borders.
+    Padding is used to create space around an element's content, inside of any defined borders.
+    margin:20px;
+    margin:0 auto;  //for center
+    margin:topbottom leftright;
+    margin:top right bottom left; 
+    padding: 20px;
+    same syntax padding as margin
+    for particular side padding use
+    padding-top , padding-right, padding-bottom, padding-left same in margin
+
+10. Box Model
+    The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
+    Content - The content of the box, where text and images appear
+    Padding - Clears an area around the content. The padding is transparent
+    Border - A border that goes around the padding and content
+    Margin - Clears an area outside the border. The margin is transparent
+    Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.
+    Total element width = width + left padding + right padding + left border + right border + left margin + right margin
+    Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+
+11. height And width
+    height: 100px , 100vh , 10rem, 10em , 10cm , 10% ;
+    width: 100px , 100vw , 10rem, 10em , 10cm , 10% ;
+    max-height:100px; 
+    min-height:100px;
+    max-width:100px;
+    min-width:100px;
+
+    note=> Max means Jyada s Jyada itni honi chahiye isse jyada ni hona chahiye
+            Min Means Kam S Kam Itni to hona hi chahiye ise kam ni hona chahiye
+
+12. CSS Text Formatting
+    1. color : red; hex:#ff00ff, rgba(0,0,255,0.5), hsl(0%, 0% 0%), initial , inherit;
+    2. text-align: center, left, right , justify;
+    3. text-decoration: none, underline, overline, line-through;
+    4. text-tansform : uppercase, lowercase, capitalize;
+    5. text-indent :50px;
+    6. letter-spacing:3px;
+    7. word-spacing;3px:
+    8. line-height:1.8, 20px;
+    9. direction :rtl , ltr;
+    10.text-shadow: horizontal-shadow vertical-shadow blur-radius color;
+                text-shadow:2px 2px 8px red;
+    11.box-shadow :  horizontal-shadow vertical-shadow blur-radius color;
+                 box-shadow:-10px 10px 20px rgb(43, 7, 7);
+    12.white-space:nowrap, pre, pre-wrap, pre-line, normal, initial, inherit;
+    13.vertical-align:baseline, 20px, 50%, sub, super, top, text-top, middle, bottom, text-bottom, initial, inherit;
+
+13. Css Font
+    1. font-family: 'Courier New', Courier, monospace;
+    2. font-style: normal, italic, oblique;
+    3. font-size:16px , 2rem, 1em, 10%, medium, small, large;   1em = 16px /*50px/16=>3.12*/
+    4. font-weight : normal, bold, 900, bolder, lighter, 100 to 900;
+    5. font-variant :normal , small-caps;
+
+    use google fonts
+    https://fonts.google.com/
+    copy and paste link directly 
+
+    use download fonts
+    download and font which you like and extract that downloaded file in our folder in
+    @font-face {
+        font-family: abc;
+        src: url(cursive-option/Cursive\ Option.ttf);
+    }
+
+14. Css Links
+   1. link
+   2. hover
+   3. active
+   4. visited 
+   a:link{
+       color:black;
+   }
+    a:hover{
+       color:yellow;
+   }
+    a:active{
+       color:blue;
+   }
+    a:visited{
+       color:red;
+   }
+
+15. Css Units 
+    CSS has several different units for expressing a length. many takes units as width,margin,padding,font-size,border
+    There Are Two Types of length a. Relative b. Absolute
+
+    1. Absolute Units Are-
+        a. cm (centimeters)
+        b. mm (millimeters)
+        c. in (inches 1in = 96px = 2.54cm)
+        d. px (pixels 1px = 1/96th of 1in)
+        e. pt (points 1pt = 1/72 of 1in)
+        6. pc (picas 1pc = 12pt)
+
+    2. Relative Units Are-
+        a. em (relative to the font size of the element 2em means 2 times the size of the current font)
+        b. ex (relative to the ex height of the current font rarely used)
+        c. ch (relative of the width of zero)
+        4. rem (relative to the font size of the root element)
+        5. vw (relative to 1% width of the viewport)
+        6. vh (relative to 1% height of the viewport)
+        7. vmin (relative to 1% of viewport smaller dimension)
+        8. vmax (relative to 1% of viewport larger dimension)
+        9. % (exaple font-size:10%;)
+        note => mostly used rem , em and px and % and vh , vw
+
+16. CSS Cursor
+    cursor:alias|all-scroll|auto|cell|col-resize|context-menu|copy|crosshair|default|e-resize|ew-resize|grab|grabbing|help|move|n-resize|ne-resize|nesw-resize|no-drop|none|not-allowed|ns-resize|nw-resize|nwse-resize|pointor|progress|row-resize|s-resize|se-resize|sw-resize|text|vertical-text|w-resize|wait|zoom-in|zoom-out|initial|inherit|unset;
+
+17. Important
+    color : red !important ; property who has important value is always display and overright other properties 
+
+18. opacity
+    opacity: 0 to 1; //transparency k lia use hota h 
+
+19. Css Gradients
+    Two Types of Gradients Are in Css
+        a. Linear Gradient
+        b. Radial Gradient
+
+        liner Gradient example are-
+            background-image:linear-gradient(direction, color1, color2, ....);
+            background-image: linear-gradient(to left, red, orange, green); 
+                        //to left, to right, to top, to bottom
+            background-image: linear-gradient(45deg , red, orange, green); alos give -deg  like -45deg
+            background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+
+        Radial Gradient example are-
+            background-image:radial-gradient(shape, start color, last color);
+            background-image: radial-gradient(red, yellow, green);
+            background-image: radial-gradient(circle, red 10%, yellow 20%, green 60%); by fefault eclipse
+            background-image: repeating-radial-gradient(red 10%, yellow 20%, green 10%);
+
+20. Css Overflow
+    a. overflow: auto|hidden|scroll|visible|;
+    b. overflow-x
+    c. overflow-y
+
+21. Css resizeable
+    resize: vertical|horizontal|both|none;
+
+22. CSS Lists
+    for ul =>  list-style-type: circle|disc|square|decimal|decimal-leading-zero;
+    for ol =>  list-style-type: upper-alpha| lower-alpha|upper-roman|lower-roman|armenian|georgian|lower-greek|lower-latin|upper-greek|upper-latin;
+    note-also use image as bullet
+    list-style-image: linear-gradient(red, yellow);
+    list-style-image: url('demo.jpg');
+    list-style-position: inside; outside
+
+    Shortend
+    list-style:type position image;
+    list-style:square inside url('demo.gif');
+
+23. Css Tables
+    for full border of table
+    table,th,th{
+        border:2px solid black;
+        width:100%; //for full width
+        border-spacing:10px; for space b/w borders
+        border-collapse:collapse | separate;
+    }
+    for outside table border
+    table{
+        border:1px solid black;
+    }
+    align 
+    th{
+        text-align:center|left|right;
+        background:#fafafa;  //for heading color
+    }
+    vertical align 
+    td{
+        vertical-align:bottom|top;
+    }
+    for padding
+    th,td{
+        padding:10px;
+    }
+    for horizontal dividers 
+    th, td{
+        border-bottom:1px solid #ddd;
+    }
+    for hover
+    tr:hover{
+        background:#f5f5f5;
+    }
+    striped table 
+    tr:nth-child(even){
+        background:#f2f2f2;
+    }
+    caption side
+    table{
+        caption-side:bottom;
+        empty-cells:hide | show; //for empty cells
+        table-layout:fixed, auto; //for layout
+    }
+    note=> ADd a container element like div around the table with overflow-x:auto; to make responvie
+
+24. Css Box Sizing 
+    It allows to include padding and boder in an element's total width and height.
+    box-Sizing:border-box;
+    *{
+        box-sizing:border-box; //applying this to all element this is best way
+    }
+
+25. CSS Functions
+    1. linera-gradient()   // already discussed on line 246
+    2. radial-gradient()   //already discussed on line 253
+    3. repeating-radial-gradient() //above discussed
+    4. repeating-linear-gradient() //above discussed
+    5. calc(expression)  
+        the calc function perform a calculation to be used as the property value  
+        required a Mathematical expression the result will be used as the value the oprators are: + - * /
+        example=> width: calc(100% - 500px);
+    6. attr(attribute-name)
+        the attr() function returns the value of a attribute of selected elements this value can be used in stylesheet.
+        required the name of the attribute of the html element
+        example 
+        a:after{
+            content:" ( " attr(href) ") ";
+        }
+    7. Variables in Css 
+        :root{
+            --primary-color:orange;
+        }
+        p{
+            background-color: var(--primary-color);
+        }
+
+26. Css Initial or Inherit
+    Inherit => Get the property from the parent element
+    Initial => The default Value for the property (the browser default)
+    Unset => Acts as either inherit or initial. it'll acts as inherit if the parent as a value that matches, or else it will act as initial. 
+    Revert => same as unset it reset the properyt of to its inheritated value.
+
+27. Object Fit property 
+        object-fit:cover|contain|fill|none|scale-down;
+        object-position: x-axis y-axis|right bottom|50% 50%|20px 95px|center 20px|60% top;
+
+28. CSS Filter
+    same as filter you used in mobile phones
+    filter: none
+    filter:blur(px) 
+    filter:brightness(%)
+    filter:contrast(%)
+    filter:drop-shadow(horizontal vertical blur spread color)
+    filter:grayscale(%)
+    filter:hue-rotate(deg)
+    filter:invert(%)
+    filter:opacity(%)
+    filter:saturate(%)
+    filter:sepia(%)
+    filter:url() 
+        The url() function takes the location of an XML file that specifies an SVG filter, and may include an anchor to a specific filter element. Example:
+        filter: url(svg-url#element-id)
+
+30. Image Sprites
+    An image sprite is a collection of images put into a single image.
+    A web page with many images can take a long time to load and generates multiple server requests.
+
+    background: url('./images/spritesheet.png') -3135px 0;
+
+    online sprites generator 
+    https://www.toptal.com/developers/css/sprite-generator/
+    https://spritegen.website-performance.org/
+
+31. Pseudo Classes 
+    A pseudo-class is used to define a special state of an element.
+        selector:pseudo-class {
+            property: value;
+        }
+    
+    exaple  a:hover{
+                color:brown;
+            }
+
+    for knowing all pseudo classes click on given link
+    https://www.w3schools.com/css/css_pseudo_classes.asp
+
+32. Pseudo elements 
+    A CSS pseudo-element is used to style specified parts of an element.
+        selector::pseudo-element {
+            property: value;
+        }
+    
+    example     p::first-line {
+                    color: #ff0000;
+                }
+
+    more ::after , ::before , ::first-letter, ::first-line, ::marker , ::selection
+    for knowing all pseudo elements click on given link
+    https://www.w3schools.com/css/css_pseudo_elements.asp
+
+33. display And Visibility 
+    a. display:block;
+        it always starts with new line and take full width available.
+        you can set height and width
+    b. display:inline;
+        it does not start on a new line and take as width as element required or necessary 
+        you cannot set height and width 
+    c. display:inline-block;
+        starts with same line but it takes height and width 
+    d. display:none;
+        Hide The element and leave their space 
+    e. Visibility:hidden;
+        Also hide the element but it take space does not leave the space in layout.
+
+34. CSS Position 
+    Its is used to position the element 
+    There are four different position values. 
+    elements positioned using top, bottom, left, right  properties
+    a. Static => By default
+    b. Relative  => position relative to its normal position apni position p move krta h and place nhi chorta h
+    c. fixed => Position relative to the viewport
+    d. Absolute => position relative to the nearest positioned ancestors if any if not then uses document body position apne parent ko dkh kr decide krta h
+
+    exaple .parent{
+        position:relative;
+    }
+    .child{
+        position:absolute;
+        top:0;
+        bottom:0;
+    }
+    .stickonbottom{
+        position:fixed;
+        bottom:0;
+        right:0;
+    }
+
+35. Layers And Z-index
+    Z-index is work only with position elements 
+    for example z-index:1;
+    which element has greater z-index value shows first 
+    layrs and z-index example is on line 323  to 360 in style.css file and 99 to 104 in html file.
+
+36. Float And Clear
+    The float property specifies whether or not an elements should float.
+    The clear property is used to control the behaviour of floating elements
+    float: left;
+    float: right;
+    clear:left; clear:right; clear:both;
+    example on line number 361 to 374 in style.css
+
+37. CSS 2D Transform
+    Css Transform Allows us to move , rotate, scale, skew an element.
+
+    transform:rotate();
+        rotate method rotates an element according to given degree.
+        transform:rotate(45deg);
+
+    transform:translate();
+        translate method moves an element from its current position according to X-axis And Y-axis
+    transform:translateX();
+        translateX method moves an element from its current position according to X-axis
+    transform:translateY();
+        translateY method moves an element from its current position according to Y-axis
+        transform:translate(20%, 10%);
+        transform:translateX(10px);
+        transform:translateY(20px);
+
+    transform:scale();
+        scale method increase decrease the size of element according to parameters given for height and width.
+    transform:scaleX();
+        scaleX increase decrease width of an element
+    transform:scaleY();
+        scaleY increase decrease height of an element
+        transform:scale(2, 0.5);
+        transform:scaleX(2);
+        transform:scaleY(1.5);
+
+    transform:skew();
+        Skew Method skews an element with X-axis and y-axis by given angles degree.
+    transform:skewX();
+        skewX method skew an element along with x-axis by given angle.
+    transform:skewY();
+        skewY method skew an element along with y-axis by given angles.
+        transform:skew(10deg , 10deg);
+        transform:skewX(10deg);
+        transform:skewY(10deg);
+
+    translate:matrix();
+        The matrix method combines all the 2d transform method into one.
+        the matrix method take six parameters.
+        transform:matrix(scaleX,skewY(),skewX(),scaleY(),translateX(),translateY())
+        translate:matrix(1, -0.3, 0, 1, 0, 0);
+        transform: matrix(2, 1, 2, 0.5, 1, 0);
+
+    transform:origin;
+        decides in which point start transform
+        allows us to change the position 
+            transform-origin: center center;
+            transform-origin: top left;
+            transform-origin: top right;
+            transform-origin: bottom left;
+            transform-origin: bottom right;
+
+38. CSS 3D transform
+    Css3 allows you to format your element using 3d transformation 
+        transform:translate3d(x,y,z);
+        transform:translateZ(z); only for z axis
+        transform:scale3d(x,y,z);
+        transform:scaleZ(z); only for z axis
+        transform:rotate3d(x,y,z,angle);
+        transform:rotateZ(angle);
+        perspective:none | length 500px;
+        perspection-origin:x-axis y-axis; by default 50% 50%
+        backface-visibility:hidden|visible;
+        matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n);
+
+39. CSS Transitions
+    it allows us to change property smoothly
+    transition-property:width|height|all|none|propertyname etc;
+    transition-duration:5s;
+    transition-timing-function:linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start,end)|cubic-bezier(n,n,n,n);
+    transition-delay:2s;
+    Shortend
+        transition:property duration timing-function delay;
+        transition:all 2s linear;
+
+40. CSS Animation
+    Css animation allows animation of most of the elements without using javascript.
+    An animation let's an element gradually change from one style to another
+    you can change many css properties you want and many times you want
+    Way to write animation code
+    p{
+        color:black;
+        1. animation-name:myAnimationName;
+        2. animation-duration:4s;
+        3. animation-delay:2s;
+        4. animation-iteration-count:3|infinite;
+        5. animation-timing-function:ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(n,n,n,n)|step-start| step-end|steps(int,start,end);
+        6. animation-direction:normal|reverse|alternate|alternate-reverse;
+        7. animation-fill-mode:none|forwards|backwards|both;
+        8. animation-play-state:running|paused;
+
+        Shortend
+        animation : animationname duration timingfunction delay iterationcount direction fillmode playstate;
+    }
+    @keyframes myAnimationName {
+        from {color:red;}
+        to {color:green;}
+    }
+    also give percentage like this 
+    @keyframes myAnimationName {
+        0% {color:red;}
+        25% {color:blue;}
+        50% {color:orange;}
+        75% {color:brown;}
+        100% {color:green;}
+    }
+    alos use pixels as 
+    @keyframes myAnimationName{
+        100px{color:red;}
+        200px{color:blue;}
+        300px{color:red;}
+        400px{color:blue;}
+        500px{color:red;}
+        400px{color:blue;}
+        300px{color:red;}
+        200px{color:blue;}
+        100px{color:red;}
+    }
+    example in style.css on line 417 to 441 and html on line 117
+
+41. Print Style in CSS
+    print Style it is used for printers
+    @media print{
+        .print{
+                font-size: 2rem;
+        }
+    }
+
+42. Responsive Web design and viewport meta tag
+    responvie image and video use
+        img {
+            width: 100%;
+            height: auto;
+        } 
+        and 
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+        or
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        background-size: contain;//the background image will scale, and try to fit the content area.
+        background-size: 100% 100%;//the background image will stretch to cover the entire content area:
+        background-size: cover; //the background image will scale to cover the entire content
+        use picture html tag for show different images in different devices
+
+        viewport use this in head tag for responsiveness
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        note=>you can use any framework like bootstrap , w3.css to make responsive designs easily 
+
+43. Media Queries 
+    Media query is CSS technique introduced in CSS3. 
+
+    if more than 480px
+    @media screen and (min-width:480px;){
+
+    }
+
+    if browser window is less than 500px then it happens
+    @media only screen and (max-width : 500px){
+        selector {
+            property : value;
+        }
+    }
+    for mobile phones 
+    @media only screen and (max-width:768px){
+         selector {
+            property : value;
+        }
+    }
+    more than 768px for desktop
+    @media only screen and (min-width:768px){
+
+    }
+    more than 600px for tablets 
+    @media only screen and (min-width:600px){
+
+    }
+
+44. CSS Advanced selector
+    There are 6 Types of Selectors in Css 
+        a. Basic Selectors
+        b. Universal Selector (*)
+        c. Combinator selectors
+        d. Attribute (attr) selectors
+        e. Pseudo elements Selectors
+        f. Pseudo classes selectors
+
+        a. Basic Selectors 
+            1) element{} h1{} select all h1 element
+            2) .class{} .myclass{} select all element whose class is myclass
+            3) #id{} #myid{} selectors all element whode id is myid
+            4. h1,p{} grouping selector selectors all h1 and p element
+
+        b. Universal selector
+            *{} select all element
+        
+        c. Combinator Selector
+            1. Descendent Selector 
+                div p{} //select all p element inside div element
+            2. child Selector
+                div > p {} //select all p element that are immediate childern of div
+            3. Adjacent Sibling Selector
+                div + p {} //select all p element that are placed after div means sibling same position
+            4. General Sibling Selector
+                div ~ p{} //select all p element that are sibling of div also sibling k andr k p bhi
+
+        d. Attribute Selector
+            1. a[target] //select all a element with target attribute
+            2. a[target="_blank"] //select all a element with target attribute whose value is _blank
+            3. [title~="set"] //selected all element which has title attribut that contains a space separated list of words , one of which is set
+            4. [class |="first"] select all elements with a class attribute value that begins with first.
+            5. [class $="box"] select all elements with a class attribute value that ends with box.
+            6. [class ^="box"] select all elements with a class attribute value box
+            7. [class *="ox"] select all elements with a class attribute value that contain ox.
+            8. input[type=""submit]
+            9. input[type=""text]
+            10. input[type=""button]
+            11. input[type=""password]
+            12. input[type=""reset]
+            13. input[type=""text]:focus{}
+            14. a[href^="https"]
+            15. a[href$=".com"]
+            style.css line 504 to 569 html on line 120 to 143
+
+        e. Pseudo elements Selectors
+            1. ::after //insert something after element content
+            2. ::before //insert something before element content
+            3. ::first-letter //select first letter of element
+            4. ::first-line // select first line of element
+            5. ::selection //the content which user selected 
+
+        f. Pseudo Classes Selector
+            1. :hover 
+            2. :active
+            3. :link
+            4. :visited 
+            5. :focus 
+            6. :empty 
+            7. input:checked 
+            8. input:disabled 
+            9. input:enabled 
+            10. :first-child 
+            11. :first-of-type
+            12. input:in-range
+            13. input:invalid 
+            14. :last-child 
+            15. :last-of-type 
+            16. :lang(it) select lang attr equal to it 
+            17. :not(element)
+            18. :nth-child(n)
+            19. :nth-last-child(n)
+            20. :nth-last-of-type(n)
+            21. :nth:nth-of-type(n)
+            22. :only-of-type(n)
+            23. :only-child 
+            24. input:optional 
+            25. input:out-of-range
+            26. input:read-only 
+            27. input:read-write 
+            28. input:required 
+            29. :root
+            30. input:valid 
+            31. #news:target
+            style.css line 593 to 683
+
+45. CSS Specificity 
+    If there are two or more conflicting CSS rules that point to the same element, the browser follows some rules to determine which one is most specific and therefore wins out.
+    Think of specificity as a score/rank that determines which style declarations are ultimately applied to an element.
+    The universal selector (*) has low specificity, while ID selectors are highly specific! 
+
+    Specificity Hierarchy
+    Every selector has its place in the specificity hierarchy. There are four categories which define the specificity level of a selector:
+
+        1. Inline styles - An inline style is attached directly to the element to be styled. Example: <h1 style="color: #ffffff;">.
+
+        2. IDs - An ID is a unique identifier for the page elements, such as #navbar.
+
+        3. Classes, attributes and pseudo-classes - This category includes .classes, [attributes] and pseudo-classes such as :hover, :focus etc.
+
+        4. Elements and pseudo-elements - This category includes element names and pseudo-elements, such as h1, div, :before and :after.
+
+        Calculation for specificity
+        !important                               => 10000
+        Inline Style                             => 1000
+        Id                                       => 100
+        class/ Attribute/ Pseudoclass            => 10
+        element/ pseudo element                  => 1 
+        */ body                                  => 0
+
+        for example 
+        #content h1:focus {
+            100 1 10 => 111 so its specificity is 111
+        }
+        <h1 style="color:red;">It has 1000 specify bcoz inline style</h1>
+        
+46. CSS Multiple Columns
+        the css3 multicolumns allows easy defination of multiple columns just like in newspaper
+        properties are-
+        column-count:number,auto;
+        column-gap:10px,normal;
+        column-rule-style:none,hidden,double,groove,ridge,inset,outset,solid,dotted,dashed,grove,;
+        column-rule-width:medium,thin,thick,10px;
+        column-rule-color:colorname,hexadecimal,rgba;
+        Shortend
+        column-rule: width style color;
+        column-span:1,all;
+        column-width:auto,length;
+        columns:column-width column-count;
+        column-fill:auto,balance;
+
+47. CSS Flexbox
+    A flexible boxes or flexbox, is a new layout mode in Css3 
+    Flex Box properties 
+        1. display : flex;
+        2. flex-direction:row,column,row-reverse,column-reverse;
+        3. justify-content: flex-end, flex-start, center, space-around, space-between, space-evenly;
+        4. align-items:center,flex-start,flex-end,stretch;
+        5. flex-wrap:nowrap,wrap,wrap-reverse;
+        6.   flex-flow: row-reverse wrap;   shortend of 2 => flex-flow:flex-direction wrap;
+        6. align-content:center,flex-start,flex-end,stretch,space-around, space-between;
+    Flex items properties 
+        1. order:2;
+        2. align-self:center,flex-end,flex-start,stretch,auto,baseline;
+        3. flex:2;  // flex : flew-grow flex-shrink flex-basis;
+        4. flex-grow:2;
+        5. flex-basis:auto , 10%, 10px;
+        6. flex-shrink:3;
+
+48. CSS Grid 
+    Grid box is a new layout mode in css3 to build responsive layout 
+    To Make An html element behave as grid container you have to set the display property to grid or inline-grid.
+    Grid Box Properties 
+    1. display:grid|inline-grid;
+    2. grid-template-columns:1fr 2fr auto; or 100px 200px 300px auto;
+            note=> specifies the size of columns
+    3. grid-template-rows:100px auto;
+            note=> specifies the size of rows
+    4. gird-template-areas:'header header header header'    and give child like this=> grid-area:header;
+    'section section section aside'
+    'footer footer footer footer';
+    note=> specifies the grid layout using named items
+    5. grid-template-rows/grid-auto-columns
+            note=> specify the height of the rows and auto size of the columns 
+    6. grid-auto-rows/grid-template-columns
+            note=> specify the width of the columns and auto size of the rows 
+    7. grid-auto-flow/grid-auto-rows/grid-template-columns
+            note=> specified how to place autoplaced items and auto size of the rows and set grid template column propoerty.
+    note=> grid:none grid-templates-rows grid-templates-columns grid-templates-areas (grid-auto-flow)grid-auto-columns(grid-auto-flow)grid-auto-rows ;
+    none means=> No specified size for the columns and rows
+    8. column gap=> specify the gap b/w the column
+    9. gap:shortend property for row gap n collumn gap
+    10. grid: a shortend property for grid-template-rows,grid-template-columns,grid-template-areas,grid-auto-rows,grid-auto-columns,grid-auto-flow 
+    11. grid-area : either specifies a name for the grid item or this property is shortend for grid-row-start/grid column-start/grid-row-end/grid-column-end
+    12. grid-auto-columns:specifies a default column size;
+    13. grid-auto-flow:specifies how auto placed items are inserted in the grid.
+    14. grid-auto-rows:specifies a default row size;
+    15. grid-column:shortend property for grid-column-start grid-column-end
+    16. grid-column-end:specifies where to end the grid item
+    17. grid-column-start:specifies where to start the grid item
+    18. grid-column-gap:specifies the size of the gap between columns;
+    19. grid-gap:shortend property for row-gap column-gap
+    20. grid-row:shortend property for grid-row-start grid-row-end
+    21. grid-row-end:specifies where to end the grid item
+    22. grid-row-start:specifies where to start the grid item
+    23. row-gap: specifies the gap b/w grid rows
+    24. grid-template: shortend property for grid-template-rows grid-template-columns grid-template-areas
+    25. grid-template-columns: specifies the size of the column and how many column in grid layout
+    26. grid-template-rows: specifies the size of the row in grid layout
+
+    practical in style.css line number 735 to 798
+
+49. W3C Standards CSS Validation 
+    Go On google then search Css validator
+    click on http://www.css-validator.org/
+    or https://jigsaw.w3.org/css-validator/
+    Now Validate By Direct Input 
+    Then Copy And paste Your code And Check
+
+     Reference W3schools.com
+
+---------------------------------------------------End--------------------------------------------------------------

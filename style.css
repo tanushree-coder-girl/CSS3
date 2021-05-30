@@ -22,9 +22,9 @@
     background-color: hsl(148, 89%, 50%);  /*hsl value color*/
     background-color: hsla(91, 88%, 50%, 0.473);  /*hsla value color*/
 }
-.bg{
-    /* background-color: blueviolet;
-    opacity: 0.5; */
+/* .bg{
+    background-color: blueviolet;
+    opacity: 0.5; 
     width: 100vw;
     height: 100vh;
     background-color: red;
@@ -32,4 +32,770 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    background-size: cover;
+} */
+/* .border{
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin:20px;
+    padding: 20px;
+    min-height: 200px;
+    height: 600px;
+    max-height: 500px;
+    width:500px;
+    min-width: 300px;
+    max-width: 400px;
+    background-color: bisque;
 }
+.outline{
+    outline-style: dotted;
+    outline-color: cornflowerblue;
+    outline-width: 2px;
+    outline-offset: 15px;
+} */
+/* .text-formating{
+    padding: 10px;
+    width: 50%;
+    height:50vh;
+    margin: auto;
+    border: 1px solid orange;
+    color: blue;
+    text-align: justify;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-indent: 50px;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    line-height: 1.9;
+    direction: ltr;
+    text-shadow: 2px 2px 4px #1bfa8a;
+    white-space: normal;
+    vertical-align:text-bottom;
+} */
+/* @font-face {
+    font-family: myFont;
+    src: url(fonts/cursive-option/Cursive\ Option.ttf);
+  }
+.font{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 3.12em;  
+}
+.myDownloadFolnt{
+    font-family: myFont;
+} */
+/* a:link{
+    background-color: rgb(0, 247, 255);
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    cursor:pointer;
+}
+a:hover{
+    color: blue;
+}
+a:visited{
+    color: green;
+}
+a:active{
+    color: burlywood;
+} */
+/* #para{
+    background-color: lawngreen;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+    margin: 150px auto;
+    opacity: 0.9;
+    color: white;
+}
+.mypara{
+    background-image: linear-gradient(to right, rgba(255, 196, 0, 0.5), rgba(38, 0, 255, 0.5));
+    box-shadow:-10px 10px 20px rgb(224, 1, 1);
+} */
+/* .gradient{
+    background-image: linear-gradient(to right, orange, white 30%, green 30%);
+    background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+    background-image: radial-gradient(circle, red 10%, yellow 20%, green 60%);
+    background-image: repeating-radial-gradient(red 10%, yellow 20%, green 10%);
+    width: 50%;
+    height: 50vh;
+} */
+/* .overflow{
+    border: 2px solid red;
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+    resize:both;
+}
+textarea{
+    resize: none;
+} */
+/* ul{
+    list-style-type: circle;
+    list-style-image: linear-gradient(red, yellow);
+    list-style-position: inside;
+    background: violet;
+    padding: 20px;
+}
+ol{
+    list-style-type:upper-alpha; 
+    list-style: square inside url('images/1.jpg');
+}
+ul li{
+    border: 2px solid blue;
+    margin: 5px;
+    background: yellowgreen;
+} */
+/* table{
+    width: 100%;
+    caption-side: bottom;
+    table-layout: fixed;
+}
+table,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-spacing: 10px;
+    empty-cells: hide;
+}
+th{
+    height: 50px;
+    text-align: center;
+    background: cadetblue;
+    color: white;
+}
+td{
+    height: 40px;
+    vertical-align: bottom;
+    text-align: center;
+}
+th,td{
+    padding: 15px;
+}
+th,td{
+    border-bottom: 1px solid rgb(53, 47, 47);
+}
+tr:hover{
+    background: #f5f5f5;
+}
+tr:nth-child(even){
+    background: #f2f2f2;
+} */
+/* *{
+    box-sizing: border-box;
+}
+.box-sizing{
+    border: 2px solid blueviolet;
+    height: 200px;
+    width: 500px;
+}
+.box-sizing2{
+    border: 2px solid rgb(68, 0, 255);
+    height: 200px;
+    width: 500px;
+    padding: 10px;
+} */
+/* :root{
+    --primary-color:orange;
+}
+.functions{
+    border: 1px solid red;
+    width: calc(100% - 500px);
+    background-color: var(--primary-color);
+}
+.functions:after{
+    content:'A am After Text';
+}
+.functions::before{
+    content:'A am before Text';
+}
+a:after{
+    content: " (" attr(href) ") ";
+}
+a{
+    background-color: var(--primary-color);
+} */
+/* .initial{
+    color: rgb(68, 0, 255);
+}
+.initial p{
+    color: initial;
+}
+.inherit{
+    border: 1px solid blue;
+}
+.inherit li{
+    border: inherit;
+} */
+/* img{
+    border: 1px solid green;
+    height: 400px;
+    width: 200px;
+    object-fit:cover;
+    object-position: right top;
+    filter:sepia(50%);
+} */
+/* .sprite-img{
+    width: 1000px;
+    height: 90vh;
+    border: 2px solid red;
+    background: url('./images/spritesheet.png') -3135px -606px;
+}
+ */
+/*  div{
+     padding: 20px;
+     font-size: 2rem;
+     border:2px solid steelblue;
+ }
+ div::first-letter{
+    color: turquoise;
+ }
+ p{
+     display: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    background:steelblue;
+ }
+ p::first-line{
+     font-size: 40px;
+ }
+ p::before{
+     content: 'hy i am before text';
+ }
+ div:hover p {
+    display: block;
+}
+div:first-child {
+    color: blue;
+  } */
+  /* div{
+      border: 1px solid red;
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+  }
+  .hideMe{
+      visibility: hidden;
+  } */
+.main-div{
+    border: 2px solid slategrey;
+    width:50%;
+    height: 50vh;
+    position: relative;
+}
+/* .para1{
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    display: inline-block;
+    position: absolute;
+   top: 0;
+   left: 0;
+}
+.para2{
+    width: 100px;
+    height: 100px;
+    background-color: lawngreen;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.para3{
+    width: 100px;
+    height: 100px;
+    background-color: springgreen;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.para4{
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+} */
+/* .layer1{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: limegreen;
+    position: relative;
+    z-index: 4;
+}
+.layer2{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: cornflowerblue;
+    position: relative;
+    top: 50px;
+    right: 50px;
+    z-index: 3;
+}
+.layer3{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: purple;
+    position: relative;
+    top: 100px;
+    right: 100px;
+    z-index: 2;
+}
+.layer4{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: palevioletred;
+    position: relative;
+    top: 150px;
+    right: 150px;
+    z-index: 1;
+} */
+/* img{
+    float: left;
+}
+.div1{
+    float: right;
+    clear: left;
+    border: 2px solid blue;
+    width: 50%;
+}
+.div2{
+    width: 50%;
+    float: left;
+    border: 2px solid red;
+} */
+/* .transform{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+}
+.transform:hover{
+    transform: rotate(45deg);
+}
+.transofrm2{
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+}
+.transofrm2:hover{
+    transform: rotate3d(10,10,10,45deg);
+    transform:scale3d(1,2,0.5);
+    transform:translate3d(10px,10px,10px);
+    perspective: 50px;
+    perspective-origin: bottom;
+}
+.transition{
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+     transition-property:width,height;
+    transition-duration:5s;
+    transition-timing-function:cubic-bezier(10,10,10,10);
+    transition-delay:2s; 
+    transition: all 0.5s ease-in-out 2s;
+}
+.transition:hover{
+    width: 200px;
+    height:200px;
+} */
+
+/* .animation{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to right, red, green, blue);
+    opacity: 0.7;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation-name:move;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-delay: 2s;
+    animation-direction:alternate-reverse;
+    animation-fill-mode:backwards;
+    animation-play-state: running; 
+    animation: move 3s linear 1s infinite alternate-reverse backwards running;
+}
+@keyframes move {
+    0% { top:0px; left:0px;  background-image: linear-gradient(45deg, orange, purple, black);}
+    25% { top:100px; left:100px; background-image: linear-gradient(90deg, aqua, gold, cadetblue);}
+    50% { top:150px; left:150px; background-image: linear-gradient(145deg, pink, orange, lawngreen);}
+    75% { top:200px; left:200px; background-image: linear-gradient(175deg, skyblue, burlywood , green);}
+    100% { top:250px; left:250px; background-image: linear-gradient(245deg, darkgreen, cadetblue, purple);}
+} */
+/* @media print{
+    img{
+        display: none;
+    }
+   .print{
+        font-size: 2rem;
+        color: red;
+   }
+} */
+/* body{
+    height: 100vh;
+    width: 100vw;
+}
+@media only screen and (min-width:768px){
+    body{
+        background-image: linear-gradient(red,green,orange,blue,violet);
+    }
+}
+@media only screen  and (min-width: 601px) and (max-width:768px){
+    body{
+      background-image: linear-gradient(yellow,black);
+    }
+}
+@media only screen and (min-width: 481px) and (max-width:600px){
+    body{
+        background-image: linear-gradient(aqua, whitesmoke);
+    }
+}
+@media only screen and (min-width: 0px) and (max-width:480px){
+  body{
+    background-image: linear-gradient(red,blue);
+  }
+} */
+
+/*Basic Selectors and universal selector*/
+/* *{
+    color: chocolate;
+}
+p{
+    background-color: white;
+}
+#maindiv{
+    background-color: rgb(115, 255, 0);
+}
+.child-div{
+    background-color: blueviolet;
+} */
+
+/*Combinator Selector*/
+/* div p{
+    background-color: blue;
+} 
+div > p {
+    color: red;
+}
+div + p {
+    font-size: 2rem;
+} 
+div ~ p{
+    font-family: cursive;
+} */
+
+/*Attribute Selector*/
+/* a[target]{
+    color: white;
+}
+a[target="_blank"]{
+    background-color: tomato;
+}
+[title~="clickme"]{
+    border: 1px solid red;
+}
+[class |="child"]{
+    border: 2px solid midnightblue;
+}
+[class $="div"]{
+    border: 2px solid yellow;
+}
+[class ^="parame"]{
+    border: 2px solid skyblue;
+}
+[class *="ch"]{
+    color: white;
+}
+input[type="text"]{
+    width: 20%;
+    padding:6px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+input[type="password"]{
+    width: 20%;
+    padding:6px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+input[type="text"]:focus{
+  border: 2px solid grey;
+}
+input[type="button"]{
+    padding: 10px 25px;
+    background: blue;
+    outline: none;
+    border: none;
+    color: white;
+}
+input[type="reset"]{
+    padding: 10px 25px;
+    background: rgb(252, 7, 7);
+    outline: none;
+    border: none;
+    color: white;
+}
+input[type="submit"]{
+    padding: 10px 25px;
+    background: rgb(4, 83, 35);
+    outline: none;
+    border: none;
+    color: white;
+}
+a[href^="https"]{
+    font-size: 2rem;
+}
+a[href$=".com"]{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+} */
+
+/*Pseudo Element Selector*/
+/* span{
+    display: block;
+} */
+/* span::after{
+    content: 'i m after content';
+}
+span::before{
+    content: 'i m before content';
+}
+span::first-letter{
+   background: red;
+}
+span::first-line{
+    font-variant: small-caps;
+    font-size: 1.5rem;
+}
+span::selection{
+    background: red;
+    color: white;
+} */
+/*pseudo class selector */
+/* a[href="https://www.facebook.com"]{
+   text-decoration: none;
+   padding: 10px 20px;
+   color: rgb(255, 255, 255);
+   margin-bottom: 20px;
+}
+a[href="https://www.facebook.com"]:link{
+    background: rgb(24, 24, 172);
+ }
+a[href="https://www.facebook.com"]:hover{
+    background: rgb(172, 24, 128);
+}
+a[href="https://www.facebook.com"]:active{
+    background: rgb(0, 5, 14);
+}
+a[href="https://www.facebook.com"]:visited{
+    background: rgb(142, 170, 16);
+}
+.name:focus{
+    width: 40%;
+}
+p:empty{
+    border: 2px solid red;
+}
+input:checked{
+   outline: 2px solid red;
+}
+input:disabled{
+    outline: 2px solid orange;
+}
+input:enabled {
+    outline: 2px dotted hsla(91, 88%, 50%, 0.473);
+}
+input:invalid{
+    padding: 20px;
+}
+input:in-range{
+    outline: 2px solid greenyellow;
+}
+li:first-child{
+    background: indigo;
+}
+li:first-of-type{
+   font-size: 2rem;
+}
+li:last-child {
+    background: teal;
+}
+li:last-of-type {
+    font-size: 2rem;
+}
+p:not(.parame){
+   background: thistle;
+}
+li:nth-child(even){
+    font-family: cursive;
+}
+li:nth-last-child(2){
+    color: turquoise;
+}
+li:nth-last-of-type(3){
+    color: yellow;
+}
+li:nth-of-type(4){
+    color: khaki;
+}
+li:only-of-type(5){
+    color: violet;
+}
+ul:only-child{
+    font-size: 1.5rem;
+}
+input:optional {
+    font-style: italic;
+}
+input:out-of-range{
+    font-weight: bolder;
+}
+ input:read-only {
+    color: midnightblue;
+ }
+ input:read-write {
+    color: olivedrab;
+ }
+ input:required {
+    color: rgb(24, 24, 172);
+ }
+ input:valid{
+    color: saddlebrown;
+ } */
+
+/*  .multiplecol{
+     column-count: 3; 
+    column-gap: 50px;
+    column-rule-style: dotted;
+    column-rule-width:medium;
+    column-rule-color: saddlebrown;
+    column-rule: 2px dashed rgb(4, 19, 61);
+    column-span: 1;
+   column-width: 300px;
+    columns:300px 3;
+    column-fill: auto;
+ } */
+
+ /*Flex Box*/
+/*  .flex-box{
+    border: 2px solid blueviolet;
+    display: flex;
+    flex-direction: row;
+    height:50vh;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap:wrap;
+    align-content:center;
+    flex-flow: row-reverse wrap;
+}
+ .flex-child{
+     width: 100px;
+     height: 100px;
+    border: 2px solid orange;
+ }
+ .flex-child:nth-child(10){
+     order: -1;
+ }
+ .flex-child:first-child{
+     margin: auto;
+     align-self:center;
+     flex-grow: 2;
+ }
+ .flex-child:last-child{
+   margin: auto; 
+     align-self:center;
+     flex-grow: 3;
+ }
+ .flex-child:nth-child(5){
+     flex-basis: 2;
+     flex-shrink: 2;
+     flex:2 2 10%;
+ } */
+ /*flex box end*/
+
+ /*Grid Start*/
+ .grid-box{
+    border: 2px solid red;
+    display: grid;
+    grid:
+    'header header header header header header'
+    'nav nav nav nav aside aside'
+    'section section section section aside aside'
+    'footer footer footer footer footer footer';
+ /*    grid-auto-columns: 100px;
+    grid-auto-flow:column; */
+   /*  grid-template: 150px / 200px; */
+   /*  grid-template-columns: 200px auto auto; */
+    /* grid: 200px/ auto auto; */
+   /*  grid-template-rows: 3fr 1fr 2fr auto; */
+    /*  grid-auto-rows: 50px; */
+   /*  grid-auto-rows: auto; */
+ /*   grid-auto-rows:min-content; */
+ /*   grid-auto-rows:max-content; */
+    /* grid-row-gap: 40px;
+    grid-column-gap: 40px; */
+    /*  grid-gap: 50px 10px; */
+    /*  grid-gap: 20px; */
+    /*  row-gap: 40px;
+    column-gap: 20px; */
+   /*  gap: 40px 20px; */
+   /*  gap: 20px;  */
+ }
+ .g-child{
+     border:2px solid rgb(24, 24, 24);
+ }
+ .g-child:nth-child(1){
+    grid-area: header;
+ }
+ .g-child:nth-child(2){
+    grid-area: nav;
+ }
+ .g-child:nth-child(3){
+    grid-area: aside;
+ }
+ .g-child:nth-child(4){
+    grid-area: section;
+ }
+ .g-child:nth-child(5){
+    background: aqua;
+  /*   grid-area: 1/3/4/5 ; */
+    /* grid-area: 2/2/span 2/span 1; */
+    grid-area: footer;
+    /* grid-column-start: 1;
+    grid-column-end: span 2; */
+   /*  grid-column: 1/3; */
+   /*  grid-column: 1/span 2; */
+    /* grid-row-start: auto;
+    grid-row-end: span 2; */
+   /*  grid-row-start: 2;
+    grid-row-end: span 2; */
+   /*  grid-row: auto; */
+   /*  grid-row: 2/4; */
+  /*   grid-row: 2/span 2; */
+ }
+ /*  .g-child:nth-child(10){
+    column-count:10;
+     column-rule: 4px double greenyellow; 
+ }  */
+ /*Grid End*/
+
+
+

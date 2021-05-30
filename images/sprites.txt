@@ -1,0 +1,65 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-IMG20201106120800 {
+    width: 3120px;
+    height: 4160px;
+    background-position: -5px -5px;
+}
+
+.sprite-Untitled {
+    width: 1360px;
+    height: 591px;
+    background-position: -3135px -5px;
+}
+
+.sprite-github {
+    width: 30px;
+    height: 30px;
+    background-position: -4505px -5px;
+}
+
+.sprite-gmail {
+    width: 30px;
+    height: 30px;
+    background-position: -4545px -5px;
+}
+
+.sprite-linkedin {
+    width: 30px;
+    height: 30px;
+    background-position: -4585px -5px;
+}
+
+.sprite-sss {
+    width: 1360px;
+    height: 591px;
+    background-position: -3135px -606px;
+}
+
+.sprite-stackoverflow {
+    width: 30px;
+    height: 30px;
+    background-position: -4625px -5px;
+}
+
+.sprite-stu {
+    width: 200px;
+    height: 280px;
+    background-position: -4665px -5px;
+}
+
+.sprite-tumblr {
+    width: 30px;
+    height: 30px;
+    background-position: -4875px -5px;
+}
+
+.sprite-twitter {
+    width: 30px;
+    height: 30px;
+    background-position: -4915px -5px;
+}
