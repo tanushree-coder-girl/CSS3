@@ -88,10 +88,12 @@
     7. background-clip: border-box|padding-box|content-box|initial|inherit;
     8. background-origin: padding-box|border-box|content-box|initial|inherit;
     9. background-size: auto|length|cover|contain|initial|inherit;
+    10. background-blend-mode:color-burn; etc 
 
     Shortend 
     background: background-color background-image background-repeat background-attachment background-position;
     ex=>   background: lightblue url("img_tree.gif") no-repeat fixed center;
+    background:color img position/size repeat origin clip attachment background-blend-mode;
 
     for more details => https://www.w3schools.com/css/css_background_shorthand.asp
 
@@ -173,6 +175,12 @@
                  box-shadow:-10px 10px 20px rgb(43, 7, 7);
     12.white-space:nowrap, pre, pre-wrap, pre-line, normal, initial, inherit;
     13.vertical-align:baseline, 20px, 50%, sub, super, top, text-top, middle, bottom, text-bottom, initial, inherit;
+    14.  text-overflow: ellipsis | clip;
+    15. word-wrap:break-word /normal;
+    16.  word-break: break-all/keep-all/normal;
+    17. text-align-last:auto/center/left/right/justify:
+    18. text-emphasis:initial inherit;
+    19. text-justify: inter-word;
 
 13. Css Font
     1. font-family: 'Courier New', Courier, monospace;
@@ -180,6 +188,7 @@
     3. font-size:16px , 2rem, 1em, 10%, medium, small, large;   1em = 16px /*50px/16=>3.12*/
     4. font-weight : normal, bold, 900, bolder, lighter, 100 to 900;
     5. font-variant :normal , small-caps;
+    6. font-stretch: condensed/extra-condensed/expanded/narrower/extra-expanded; 
 
     use google fonts
     https://fonts.google.com/
@@ -854,7 +863,23 @@
 
     practical in style.css line number 735 to 798
 
-49. W3C Standards CSS Validation 
+49. Border Image 
+    1. border-image-source: url(images/border.png);
+    2. border-image-width:20px| 20%;
+    3. border-image-slice:50% | 50;
+    4. border-image-repeat:space| round| stretch|repeat;
+    5. border-image-outset:10px;
+    shortend
+    border-image:source slice width outset repeat;
+    border-image: url('border.png') 30 fill / 30px / 30px space;
+    border-radius 
+    border-radius:10px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 200px;
+
+50. W3C Standards CSS Validation 
     Go On google then search Css validator
     click on http://www.css-validator.org/
     or https://jigsaw.w3.org/css-validator/
